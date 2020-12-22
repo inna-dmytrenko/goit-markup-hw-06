@@ -626,7 +626,7 @@
     }
     .mailing__email-input {
       display: inline-block;
-      width: 322px;
+      width: 358px;
       padding: 14px 16px;
       
     }
@@ -791,18 +791,33 @@
        
      
      }
+
+     .backdrop.is-hidden {
+      transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1) 500ms;
+    }
+    .backdrop.is-hidden .modal {
+      transform: translate(-50%, -50%) scale(0);
+      transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    }
+    
+     .is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+     }
      .modal {
        position: absolute;
        top: 50%;
        left: 50%;
        transform: translate(-50%, -50%);
-       width: 528px;
+       width: 488px;
        min-height: 581px;
        background-color: #ffffff;
        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
        border-radius: 4px;
 
        padding: 40px;
+       transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
       
      }
      .close-dtn {
@@ -829,11 +844,7 @@
        height: 18px;
 
      }
-     .is-hidden {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-     }
+     
 
 
      .modal__title {
@@ -870,7 +881,7 @@
     }
     
     .modal__form-input {
-      width: calc(100% - 46px);
+      width: calc(100% - 47px);
       height: 40px;
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
