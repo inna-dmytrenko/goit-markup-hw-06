@@ -5,6 +5,14 @@
         --secondary-letter-spacing: 0.02em;
         --other-letter-spacing: 0.06em;
     } */
+    html {
+      box-sizing: border-box;
+    }
+    *,
+    *::after,
+    *::before {
+      box-sizing: inherit;
+    }
     :root {
       --main-font: "Roboto", sans-serif;
       --secondary-font: 'Raleway', sans-serif;
@@ -77,7 +85,7 @@
 
     }
     .container {
-      width: 1170px;
+      width: 1200px;
       padding: 0 15px;
       margin: 0 auto;
       /* background-color: #ec93ca; */
@@ -515,7 +523,9 @@
     .footer__adrress a{
       color: #FFFFFF; 
      }
-     
+     .footer .address {
+       width: 231px;
+     }
      .footer__mail a,
      .footer__tel a {
       color: rgba(255, 255, 255, 0.6);
@@ -580,16 +590,17 @@
       height: 44px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 50%;
-      margin-right: 10px;
+      
 
       transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .social__item:not(:last-child)  {
+      margin-right: 10px;
     }
     .footer__icon {
       width: 20px;
       height: 20px;
       fill: #ffffff;
-
-      
 
     }
       
@@ -641,7 +652,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      
       letter-spacing: 0.06em;
       border: #2196F3;
       cursor: pointer;
@@ -810,7 +821,7 @@
        top: 50%;
        left: 50%;
        transform: translate(-50%, -50%);
-       width: 488px;
+       width: 528px;
        min-height: 581px;
        background-color: #ffffff;
        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -881,7 +892,7 @@
     }
     
     .modal__form-input {
-      width: calc(100% - 47px);
+      width: 100%;
       height: 40px;
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
@@ -911,7 +922,7 @@
     }
     
     .modal__form-message {
-      width: calc(100% - 35px);
+      width: 100%;
       height: 120px;
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
