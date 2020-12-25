@@ -802,7 +802,7 @@
        height: 100%;
        background-color: rgba(0, 0, 0, 0.2);
 
-       transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+       transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
        
      
      }
@@ -812,7 +812,7 @@
     }
     .backdrop.is-hidden .modal {
       transform: translate(-50%, -50%) scale(0);
-      transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     }
     
      .is-hidden {
@@ -829,10 +829,10 @@
        min-height: 581px;
        background-color: #ffffff;
        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-       border-radius: 4px;
+       border-radius: 2px;
 
        padding: 40px;
-       transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+       transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
      }
      .close-dtn {
@@ -902,7 +902,7 @@
       border-radius: 4px;
       padding-left: 42px;
       cursor: pointer;
-      transition: border-color 250ms linear;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .modal__form-input:focus {
@@ -922,7 +922,7 @@
       width: 18px;
       height: 18px;
       
-      transition: fill 250ms linear;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .modal__form-message {
@@ -933,7 +933,7 @@
       padding: 12px 16px;
       margin-top: 4px;
       resize: none;
-      transition: border-color 250ms linear;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .modal__form-message:focus {
@@ -1013,8 +1013,10 @@
       padding: 12px 20px;
       color: #303030;
       margin: 0 auto;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
     
-      transition: all 250ms linear;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .modal__form-btn:hover,
